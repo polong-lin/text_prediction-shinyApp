@@ -1,6 +1,7 @@
 library(shiny)
-directory <- "/Users//polong//Dropbox//Coursera/DataScienceSpecialization/dsscapstone-001/text_prediction-shinyApp/"
-setwd(directory)
+library(data.table)
+# directory <- "/Users//polong//Dropbox//Coursera/DataScienceSpecialization/dsscapstone-001/text_prediction-shinyApp/"
+# setwd(directory)
 dictlist <- readRDS("dictlist.rds")
 source("predictive-text-analysis/pkn/pkn.pkn.findNextWord.R")
 
