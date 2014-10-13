@@ -1,11 +1,7 @@
 library(shiny)
-directory <- "/Users//polong//Dropbox//Coursera/DataScienceSpecialization/dsscapstone-001/"
+directory <- "/Users//polong//Dropbox//Coursera/DataScienceSpecialization/dsscapstone-001/text_prediction-shinyApp/"
 setwd(directory)
-source("predictive-text-analysis/loadDictList.R")
-lines = "1e+05"; ngrams = 5; rweka = FALSE; type = "tdm"; sorted = TRUE
-dictlist <- loadDictList("t", lines, ngrams, rweka, type, sorted)
-rm(lines); rm(ngrams); rm(rweka); rm(type); rm(sorted); rm(dtTokenSplit); rm(importRDS_dt); rm(loadDictList)
-
+dictlist <- readRDS("dictlist.rds")
 source("predictive-text-analysis/pkn/pkn.pkn.findNextWord.R")
 
 shinyServer(
