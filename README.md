@@ -1,5 +1,3 @@
-# Report on Creating a Predictive Text App using text mining libraries and Shiny
-
 <div id="header">
 <h1 class="title">Report on Creating a ‘Predictive Text App’ using text mining libraries and Shiny</h1>
 <h4 class="author"><em>Polong Lin</em></h4>
